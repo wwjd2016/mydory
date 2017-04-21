@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  line-height: 1;
+  font-size: 14px;
+  height: 100%; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ' ';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font: sans-serif12px/1.5 Helvetica, Arial; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+input {
+  outline: 0;
+  border: 1px solid gray;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.text-center {
+  text-align: center !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+.listTable {
+  border: 1px solid gray;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 7px #bbb, -1px -1px 7px #bbb;
+}
+.tableHead{
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  background: #29ead6
+}
+.tableItem{
+  display: flex;
+  border-top: 1px solid gray;
+}
+.tableItem div{
+  padding: 10px 0;
+  text-align: center;
+}
+.tableHead div{
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.number{
+  width: 100px;
+  border-right: 1px solid gray;
+}
+.mockNumber{
+  width: 200px;
+  border-right: 0;
+}
+.question {
+  flex: 1;
+  border-right: 1px solid gray;
+  position: relative;
+}
+.editor{
+  position: absolute;
+  right: 40px;
+  color: gray;
+  display: none;
+  background: #fff;
+  z-index: 1;
+}
+.delete{
+  position: absolute;
+  right: 5px;
+  color: gray;
+  display: none;
+  background: #fff;
+  z-index: 1;
+}
+.question:hover .editor, .question:hover .delete{
+  display: inline-block;
+}
+.clickMock{
+  margin-left: 10px;
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+}
+.mockNumber:hover .clickMock{
+  display: inline;
+}
+.content {
+  margin: 50px auto 0;
+  width: 1000px;
+}
+.createNew textarea{
+  border: 1px solid gray;
+  width: 500px;
+  height: 100px;
+  margin-top: 20px;
+  padding: 5px;
+}
+.createNew button{
+  border: 1px solid gray;
+  padding: 3px 10px;
+  background: #fff;
+  margin-top: 20px;
+}
+.active{
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.header li a{
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+}
+.header .active{
+  font-weight: bold;
+}
+.loginArea {
+  flex: 1;
+  text-align: right;
+}
+.loginArea img{
+  height: 40px;
+  vertical-align: middle;
+}
+.loginArea > a{
+  padding: 10px;
+}
+/*common pop*/
+.popWrap{
+  position: fixed;
+  left: 50%;
+  margin-left: -250px;
+  z-index: 100;
+  top: 100px;
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  transition: all ease-in-out 0.5s;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #fff, 0px 0px 5px #fff;
+}
+.popTitle{
+  height: 50px;
+  background: gray;
+  line-height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  text-align: left;
+  color: #fff;
+}
+.closeBtn{
+  position: absolute;
+  right: 10px;
+  color: #fff;
+}
+.popFooter{
+  padding: 10px;
+  text-align: right;
+}
+.popFooter a{
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.popSure {
+  background: #3b7fc4;
+  color: #fff;
+  border: 1px solid #3b7fc4;
+  margin-right: 10px;
+}
+.popCancle{
+  background: #fff;
+  border: 1px solid gray;
+}
+.popContent{
+  flex: 1;
+  padding: 10px;
+}
+.popContent input{
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+}
+.maskPop{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+/*表单项*/
+.formIterm{
+  display: flex;
+  margin-bottom: 10px;
+}
+.formIterm label {
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+}
+.formIterm input {
+  flex: 1;
+}
+.spaceWord{
+  padding: 20px 0;
+}
+
+
+
+
+
+

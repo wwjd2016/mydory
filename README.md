@@ -1,2 +1,2 @@
-# mydory
-dory
+# myredux
+redux-study
